@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    height: 70px; 
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(11, 61, 92);
+}
+
+#portfolio {
+    display: inline-block;
+    margin-right: 500px;
+}
+
+.a { 
+    margin: 20px; 
+    text-decoration: none;
+    font-size: 1.3rem;   
+}
+
+.a:hover {
+    color: aqua;
+}
+
+#contact {
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+    background-color: aqua; 
+    border: 2px solid white;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+#contact:hover {
+    opacity: 50%;
+}
+
+.main-section {
+    height: 662px;
+    background-color: rgb(16, 81, 122);
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 50%;
+}
+
+.content-h1 {
+    padding-top: 180px;
+    text-align: center;
+    color: aqua;
+}
+
+.content-p {
+    text-align: center;
+}
+
+.cv-button {
+    height: 40px;
+    width: 100px;
+    margin-left: 250px;
+    margin-top: 50px;
+    background-color: aqua;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cv-button:hover {
+    opacity: 50%;
+}
+
+.main-img {
+    width: 50%;
+}
+
+.img {
+    height: 250px;
+    width: 200px;
+    margin-top: 150px;
+    margin-left: 200px;
+    border: 2px solid aqua;
+}
+
+.img:hover {
+    opacity: 50%;
+}
+
+@media(max-width:600px){
+   .main-section{
+    height: 650px;
+    margin-top: 50px;
+   }
+}
+
+@media (max-width: 600px){
+    .img {
+        float: left;
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 40px;
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.about-section {
+    height: 720px;
+    background-color: rgb(16, 81, 122);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.about {
+    height: 600px;
+    width: 50%; 
+}
+
+.about-img {
+    height: 250px;
+    width: 200px;
+    margin-top: 150px;
+    margin-left: 170px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+
+.about-img:hover {
+    opacity: 50%;
+}
+
+.about-text {
+    height: 600px;
+    width: 50%;
+}
+
+#about-h1 {
+    color: aqua;
+    padding-left: 200px;
+    padding-top: 70px;
+}
+
+#about-h1:hover{
+    text-decoration: underline;
+}
+
+#p-text {
+    padding-top: 30px;
+    font-size: 1.25rem;
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+.education {
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 75px;
+    padding: 5px;
+    padding-left: 270px;
+    border-collapse: collapse;
+    border: 2px solid aqua;
+}
+
+@media (max-width:600px) {
+    .about-img{
+        margin-top: 0px;
+        margin-left: 60px;
+        height: 200px;
+    }   
+}
+
+@media (max-width:600px){
+    #about-h1{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:600px){
+    #p-text{
+        margin-left: 20px;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+}
+
+.skill-section {
+    height: 724px;
+    background-color: rgb(16, 81, 122);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+#skill-text {
+    color: aqua;
+    font-size: 2rem;
+    padding-top: 50px;    
+}
+
+#skill-text:hover{
+    text-decoration: underline;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.skill-percent {
+    font-size: larger;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+#html-skill,
+#css-skill,
+#js-skill,
+#bootstrap-skill,
+#java-skill {
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top: 10px solid #33879a;
+    margin-top: 50px;
+    margin: 55px;
+    animation: bounceScale 2s ease-in-out infinite;
+}
+
+@keyframes bounceScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#html-icon {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 7px;
+}
+
+#css-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(21, 65, 197);
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 7px;
+}
+
+#js-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(212, 210, 80);
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 4px;
+}
+
+#java-icon {
+    height: 50px;
+    width: 50px;
+    color: rgb(236, 157, 9);
+    background-color: whitesmoke;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 7px;
+}
+
+#bootstrap-icon {
+    height: 50px;
+    width: 50px; 
+    color: rgb(117, 42, 192);
+    background-color: rgb(204, 193, 210); 
+    font-size: 2.8rem; 
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: -1px;
+    padding-top: 2px;
+}  
+
+@media (max-width:600px){
+    .skill-section {
+        height: 1600px;
+    }
+}
+
+.portfolio-section {
+    height: 724px;
+    background-color: rgb(16, 81, 122);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio-heading {
+    color: aqua;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+#portfolio-heading:hover {
+    text-decoration: underline;
+    opacity: 50px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    height: 280px;
+    width: 350px;
+    background-color: aqua;
+    margin: 30px;  
+}
+
+.project-text {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-left: 130px;
+}
+
+.project-text:hover {
+    color: rgb(16, 81, 122);
+    text-decoration: underline;
+}
+
+.image_ss {
+    height: 200px;
+    width: 320px;
+    padding: 5px;
+    margin: 15px;  
+}
+
+.image_ss:hover{
+    opacity: 50%;
+}
+
+@media (max-width:600px) {
+    .project-section {
+        height: 2500px;
+    }
+}
+
+#contact-section {
+    height: 724px;
+    background-color: rgb(16, 81, 122);
+}
+
+#contact-heading {
+    font-size: 2rem;
+    color: aqua;
+    padding-top: 50px;
+    padding-left: 570px;
+}
+
+#contact-heading:hover {
+    text-decoration: underline;
+}
+
+#contact-box {
+    height: 440px;
+    width: 520px;
+    margin-top: 80px;
+    margin-left: 400px;
+    border: 5px solid aqua;
+    background-color: rgb(11, 61, 92);
+}
+
+#contact-detail {
+    font-size: 1.8rem;
+    padding: 40px;
+}
+
+@media (max-width:600px){
+    #contact-heading {
+        padding-left: 30px;
+        font-size: 1.8rem;
+    }
+
+    #contact-box {
+        margin-left: 10px;
+        height: 300px;
+        width: 250px;
+    }
+
+    #contact-detail {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}

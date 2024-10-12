@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="" class="a" id="portfolio">Portfolio.</a>
+        <a href="#" class="a">Home</a>
+        <a href="#" class="a">About</a>
+        <a href="#" class="a">Skills</a>
+        <link rel="stylesheet" href="styles.css">
+        <a href="#" class="a">Project</a>
+        <a href="#"><button id="contact">Contact</button></a>
+    </div>
+
+    <div class="main-section">
+        <div class="content">
+            <h1 class="content-h1">Hi, I'm Rumana Shaikh</h1>
+            <p class="content-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat nulla ex ducimus veniam est earum dolores debitis? Ratione minus natus cupiditate nulla beatae accusantium veritatis sint eum voluptatem facilis!</p>
+            <a href="Rumana_Shaikh_Resume.pdf">
+                <button class="cv-button">Download CV</button>
+            </a>  
+        </div>
+
+        <div class="main-img">
+            <img src="photo.jpg" alt="photo" class="img">
+        </div>
+    </div>
+    <hr>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+        <div class="about">
+            <img src="photo.jpg" alt="photo" class="about-img">
+        </div>
+        
+        <div class="about-text">
+            <h1 id="about-h1">About Me</h1>
+            <p id="p-text">I completed my Bachelors of Science Information Technology with a CGPA of 8.25 out of 10. Seeking an entry-level position in a reputed organization where I can learn new things, expand my knowledge, and gain experience. As a beginner, I am looking for roles such as Web Developer, Java Developer, Software Developer, or any IT-related field.</p>
+            
+            <div class="education">Education</div>
+            <table>
+                <tr>
+                   <th>Degree</th>
+                   <th>Institute</th>
+                   <th>Board/University</th>
+                   <th>Year</th>
+                   <th>CGPA</th>
+                </tr>
+                <tr>
+                    <td>B.Sc IT</td>
+                    <td>Valia C.L College of Commerce</td>
+                    <td>Mumbai University</td>
+                    <td>2023</td>
+                    <td>8.25</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Al-ittehad Jr College</td>
+                    <td>Maharashtra Board</td>
+                    <td>2020</td>
+                    <td>74.96</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Mariyam Public High School</td>
+                    <td>Maharashtra Board</td>
+                    <td>2018</td>
+                    <td>72.40</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Skills Section -->
+    <div class="skill-section">
+        <p id="skill-text">Skills</p>
+        <div class="skills">
+            <div id="html-skill"><p class="skill-percent">90%</p>  
+                <i class="fa-brands fa-html5" id="html-icon"></i>
+            </div>          
+        
+            <div id="css-skill"><p class="skill-percent">80%</p>  
+                <i class="fa-brands fa-css3-alt" id="css-icon"></i>
+            </div> 
+
+            <div id="js-skill"><p class="skill-percent">70%</p>  
+                <i class="fa-brands fa-js" id="js-icon"></i>
+            </div>  
+
+            <div id="bootstrap-skill"><p class="skill-percent">65%</p>  
+                <i class="fa-brands fa-bootstrap" id="bootstrap-icon"></i>
+            </div> 
+
+            <div id="java-skill"><p class="skill-percent">55%</p>  
+                <i class="fa-brands fa-java" id="java-icon"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Projects Section -->
+    <div class="portfolio-section">
+        <p id="portfolio-heading">Projects</p>
+        <div class="project">
+            <div class="project-box"><p class="project-text">Portfolio</p>
+                <img class="image_ss" src="mini_project_ss/portfolio_ss.png" alt="portfolio_ss">
+            </div>
+            <div class="project-box"><p class="project-text">Amazon</p>
+                <img class="image_ss" src="mini_project_ss/amazonscreenshot.png" alt="amazon_screenshot">
+            </div>
+            <div class="project-box"><p class="project-text">Calculator</p>
+                <img class="image_ss" src="mini_project_ss/calc_ss.png" alt="calc_screenshot">
+            </div>
+            <div class="project-box"><p class="project-text">Quiz App</p>
+                <img class="image_ss" src="mini_project_ss/qiuz_app_ss.png" alt="qiuz_app_ss">
+            </div>
+            <div class="project-box"><p class="project-text">To-Do-List</p>
+                <img class="image_ss" src="mini_project_ss/to-do-list_ss.png" alt="to-do-list_ss">
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Contact Section -->
+    <div id="contact-section">
+        <p id="contact-heading">Contact Me</p>
+        <div id="contact-box">
+            <div id="contact-detail">            
+                <input class="input-text" type="text" placeholder="First Name" required><br><br>
+                <input class="input-text" type="text" placeholder="Last Name" required><br><br>
+                <input class="input-text" type="tel" placeholder="Contact Number" required><br><br>
+                <input class="input-text" type="email" placeholder="Email" required><br><br>
+                <input type="submit" class="input-text" id="btn-submit" onclick="submitButton()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitButton() {
+            alert("Your Detail is Submitted!"); 
+        }
+    </script>
+</body>
+</html>
